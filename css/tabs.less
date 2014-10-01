@@ -1,0 +1,63 @@
+.tabs {
+	ul {
+		padding: 0 0 0 10px;
+		float: left;
+		height: 32px;
+		vertical-align: top;
+		position: relative;
+		overflow: hidden;
+		margin: 0;
+		margin-top: 5px;
+		list-style: none;
+
+		li {
+			display: inline-block;
+			padding-left: 10px;
+			height: 32px;
+			line-height: 32px;
+			vertical-align: top;
+			font-family: Helvetica;
+			font-size: 12px;
+			text-shadow: 0 -1px 0 #333333;
+			background: #535c68;
+			border-top-right-radius: 25px 37px;
+			border-top-left-radius: 5px;
+			position: relative;
+			float: left;
+			box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.5);
+			margin: 0px -2px 0;
+			border-top: 1px solid rgba(255, 255, 255, 0.25);
+			border-right: 2px solid rgba(255, 255, 255, 0.25);
+			border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+			color: white;
+			cursor: pointer;
+			padding-right: 20px;
+			min-width:100px;
+			max-width: 200px;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
+
+			&.gray {
+				background: #535c68;
+			}
+			&.active {
+				z-index: 100 !important;
+				border-bottom: none;
+			}
+
+			
+			span {
+				&.iconRemove {
+					background-image: url("../images/icons/ico_closeTab.png");
+					height: 9px;
+					width: 9px;
+					cursor: pointer;
+				}
+				&.text {
+					margin-left:5px;
+				}
+			}
+		}
+	}
+}

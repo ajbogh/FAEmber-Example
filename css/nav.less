@@ -1,0 +1,84 @@
+/**
+ * Nav components
+ */
+nav{
+	&.globalNav {
+		float: left;
+		height: ~"calc(100% - 36px)";
+		width: 70px;
+		margin-top: 36px;
+		background: url("../images/shell/mainNav_vertTile.png") repeat;
+
+		&.tall {
+			margin-top: 0;
+			height: 100%;
+		}
+
+		#globalNavTop {
+			li {
+				background-image: url('../images/shell/leftNav_divider.png');
+				background-repeat: no-repeat;
+				background-position: 0px 100%;
+			}
+		}
+
+		#globalNavBottom {
+			position: absolute;
+			bottom: 0;
+		}
+
+		ul {
+			list-style: none;
+			width: 70px;
+			margin: 0;
+			padding: 0;
+
+			li {
+				width: 70px;
+				height: 70px;
+				margin-left: 0;
+
+				background-image: url('../images/shell/leftNav_divider.png');
+				background-repeat: no-repeat;
+
+				a {
+					width: 100%;
+					height: 100%;
+					display: inline-block;
+					&:before {
+						background-image: url('../images/shell/leftNav_iconSprite.png');
+						background-position: 0px 0px;
+						width: 33px;
+						height: 30px;
+						display: inline-block;
+						content: '';
+						margin-top: 22px;
+						margin-left: 17px;
+					}
+				}
+
+				&#profileBtn a:before{
+					background-position: -120px 0px;
+				}
+				&#toolsBtn a:before{
+					background-position: -150px 0px;
+				}
+				&#contactBtn a:before{
+					background-position: -244px 0px;
+				}
+				&#logoutBtn a:before{
+					background-position: -212px 0px;
+				}
+				&#version {
+					height: 27px;
+					color: #535e70;
+				}
+			}
+		}
+	}
+
+	&.fileTabs {
+		background: url("../images/shell/behindTabs_horizTile.png") repeat-x;
+		height: 37px;
+	}
+}

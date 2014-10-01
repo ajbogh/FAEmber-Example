@@ -1,0 +1,116 @@
+.formPlaceholder {
+	padding: 5px 10px;
+
+	.formContainer {
+		background-color: whitesmoke;
+		box-shadow: 0 0 3px 1px #bbbbbb;
+		border: 1px solid #bbbbbb;
+		margin-top: 10px;
+		padding: 10px;
+
+		.formBasic {
+			border: 1px solid #d7d7d7;
+
+			.formHeader {
+				border-bottom: 1px solid #d7d7d7;
+				height: 57px;
+
+				h3 {
+					font-weight: 200;
+					font-size: 24px;
+					color: #333333;
+					letter-spacing: 1px;
+					text-transform: uppercase;
+					line-height: 56px;
+					min-height: 56px;
+					padding-left: 15px;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					display: inline-block;
+				}
+			}
+
+			.formSection {
+				padding: 14px 15px 15px 15px;
+				background-color: whitesmoke;
+
+				.formSectionHeader {
+					font-weight: bold;
+					font-size: 15px;
+					line-height: 15px;
+					color: #71b215;
+					letter-spacing: 1px;
+					text-transform: uppercase;
+					margin-bottom: 14px;
+					text-shadow: none;
+				}
+
+				.formItem {
+					input {
+						width: 100%;
+					}
+				}
+			}
+
+			label {
+				font-weight: bold;
+				font-size: 12px;
+				line-height: 12px;
+				color: #4b4b4b;
+			}
+
+			.table {
+				background: #f7f7f7 url('../images/forms/stripe_bg.png') repeat;
+				display: table;
+				width: 100%;
+			}
+			.rowFluid {
+				width: 50%;
+				float: left;
+				margin-bottom: 10px;
+				padding-right: 5px;
+				height: 50px;
+
+				label {
+					display: block;
+					width: 100%;
+					margin-bottom: 5px;
+				}
+
+				/*&:before, &:after {
+					display: table;
+					content: "";
+					line-height: 0;
+				}*/
+
+				&.full {
+					width: 100%;
+				}
+				&.quarter {
+					width: 25%;
+				}
+			}
+			.formDivider {
+				clear: both;
+			}
+		}
+
+
+		.formIcon {
+			background: url('../images/icons/file_icons_sprite.png');
+			border-right: 1px solid #d7d7d7;
+			float: left;
+			width: 56px;
+			height: 56px;
+			background-position: 2px 2px;
+			
+			&.generalInfo {
+				background-position: 2px 4px;
+			}
+			&.propertyAddress {
+				background-position: 2px -247px;	
+			}
+		}
+	}
+}

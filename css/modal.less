@@ -1,0 +1,122 @@
+/* Modal styles */
+.modalComponent {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 10px;
+
+	&>div {
+		height: 100%;
+	}
+
+	.modal {
+		position: relative;
+		margin: 10px auto;
+		width: 300px;
+		background-color: #fff;
+		padding: 6px;
+		border-radius: 5px;
+		background-color: #46505a;
+		box-shadow: 0 1px 2px rgba(244,244,244,0.3) inset, 0 0 30px rgba(0,0,0,0.85);
+
+		
+		&.full {
+			width: ~"calc(100% - 40px)";
+			height: ~"calc(100% - 40px)";
+		}
+	}
+	.overlay {
+		height: 100%;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+
+	.modalHeader {
+		height: 38px;
+		padding: 2px 12px 10px 0;
+
+		h2 {
+			margin: 0;
+			margin-left: 5px;
+			line-height: 30px;
+			text-transform: uppercase;
+			color: #d0d8e4;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			text-shadow: 0 -1px 0 #1d2227;
+			font-size: 20px;
+			letter-spacing: 2px;
+			font-family: 'Oswald', sans-serif;
+			font-weight: 400;
+		}
+
+		.modalIcon {
+			height: 30px;
+			width: 35px;
+			float: left;
+			margin: 4px 10px 0px 10px;
+			background-image: url('../images/shell/leftNav_iconSprite.png');
+			background-position: 0px 0px;
+			&.contact {
+				background-position: -244px -30px;
+			}
+		}
+		.close {
+			background: transparent url('../images/buttons/modal_close_large.png') no-repeat top left;
+			background-position: 0 -25px;
+			width: 16px;
+			height: 16px;
+			border: none;
+			cursor: pointer;
+			margin-top: 6px;
+		}
+	}
+
+	.modalBody {
+		background-color: whitesmoke;
+		margin: 0px 6px;
+		height: ~"calc(100% - 6px - 38px)";
+		padding: 20px;
+		border-top: 3px solid #fafafa;
+		background-color: whitesmoke;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 12.99998px;
+		word-wrap: break-word;
+		overflow-y: auto;
+
+		.contactCard {
+			margin: 2% 2% 2% 2%;
+			box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.5);
+			padding: 2%;
+
+			.contactHeader {
+				height: 40px;
+				border-right: 1px solid #d7d7d7;
+				border-left: 1px solid #d7d7d7;
+				border-top: 1px solid #d7d7d7;
+				padding: 5px;
+			}
+			.contactText {
+				padding: 15px;
+				padding-top: 10px;
+				border-right: 1px solid #d7d7d7;
+				border-left: 1px solid #d7d7d7;
+				border-bottom: 1px solid #d7d7d7;
+				min-height: 90px;
+				margin-bottom: 10px;
+			}
+			/*.halfWrap {
+				width: 49%;
+				margin-left: 2%;
+				display: inline-block;
+				&.first {
+					margin-left: 0;
+				}
+			}*/
+		}
+	}
+}

@@ -1,0 +1,21 @@
+App.Contact = DS.Model.extend({
+	"address": DS.belongsTo('address'),
+	"addressSource": DS.belongsTo('addressSource'),
+	"businessTitle": DS.belongsTo('businessTitle'),
+	"emailAddresses": DS.hasMany('email'),
+	"enabled": DS.attr('boolean'),
+	"firstName": DS.attr('string'),
+	"forwardAddress": DS.belongsTo('address'),
+	"forwardAddressSource": DS.belongsTo('forwardAddressSource'),
+	"honorificId": DS.belongsTo('honorific'),
+	"lastName": DS.attr('string'),
+	"middleName": DS.attr('string'),
+	"phoneNumbers": DS.hasMany('phoneNumber'),
+	"primaryContact": DS.attr('boolean'),
+	"signatoryMode": DS.belongsTo('signatoryMode'),
+	"signatoryName": DS.attr('string'),
+	"socialSecurityNumber": DS.attr('string'),
+	"suffix": DS.attr('string'),
+	"taxIdNumberIsEIN": DS.attr('boolean'),
+	"type": DS.belongsTo('contactType')
+});
